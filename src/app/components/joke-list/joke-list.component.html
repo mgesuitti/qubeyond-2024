@@ -1,0 +1,33 @@
+<mat-table [dataSource]="dataSource" matSort>
+  <ng-container matColumnDef="setup">
+    <mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by Setup"
+    >
+      Setup
+    </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.setup }} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="punchline">
+    <mat-header-cell
+      *matHeaderCellDef
+      mat-sort-header
+      sortActionDescription="Sort by Punchline"
+    >
+      Punchline
+    </mat-header-cell>
+    <mat-cell *matCellDef="let element"> {{ element.punchline }} </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+</mat-table>
+
+<mat-paginator
+  [pageSizeOptions]="[5, 10, 20]"
+  showFirstLastButtons
+  aria-label="Select page"
+>
+</mat-paginator>

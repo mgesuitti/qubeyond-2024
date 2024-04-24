@@ -1,0 +1,13 @@
+cdk-virtual-scroll-viewport {
+  height: calc(100vh - 64px);
+}
+
+mat-card {
+  margin: 1rem;
+  padding: 1rem;
+}
+
+mat-card-content {
+  padding: 0;
+  margin-top: 1rem;
+}

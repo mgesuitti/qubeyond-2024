@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/pink-bluegrey.css';
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+}
+
+mat-sidenav-container {
+  position: fixed !important;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  min-width: 100%;
+}
+
+.mat-sidenav {
+  min-width: 200px;
+}
+
+.menu-item {
+  mat-icon {
+      margin-right: 1rem;
+  }
+}
+
+.mat-toolbar-row {
+  background-color: #BA343D;
+}
+
+.mat-mdc-list-item-unscoped-content {
+  align-items: center;
+  display: flex;
+}
